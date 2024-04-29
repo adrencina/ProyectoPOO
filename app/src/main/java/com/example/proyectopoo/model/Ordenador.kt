@@ -6,13 +6,16 @@ data class Ordenador(
     override var marca: String,
     override var modelo: String,
     override var estado: Estado
-) : Dispositivo(marca, modelo, estado) {
-    override fun toString(): String {
-        return "Ordenador(marca='$marca'," +
-                "modelo='$modelo'," +
-                "estado=$estado," +
-                "tipoCPU='$tipoCPU'," +
-                "ram=$ram)"
+) : Dispositivo(marca, modelo, estado), Especificaciones{
+    override fun obtenerEspecificaciones(): String {
+        return "CPU: $tipoCPU, RAM: $ram GB"
+    }
+    override fun mostrarDetalle() {
+        println("Detalles del Ordenador:")
+        println("Marca: $marca")
+        println("Modelo: $modelo")
+        println("Estado: $estado")
+        println("Especificaciones: ${obtenerEspecificaciones()}")
     }
 }
 
