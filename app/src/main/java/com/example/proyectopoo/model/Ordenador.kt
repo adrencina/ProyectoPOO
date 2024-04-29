@@ -8,7 +8,8 @@ data class Ordenador(
     override var estado: Estado
 ) : Dispositivo(marca, modelo, estado), Especificaciones{
     override fun obtenerEspecificaciones(): String {
-        return "CPU: $tipoCPU, RAM: $ram GB"
+        return "CPU: $tipoCPU," +
+                "RAM: $ram GB"
     }
     override fun mostrarDetalle() {
         println("Detalles del Ordenador:")
