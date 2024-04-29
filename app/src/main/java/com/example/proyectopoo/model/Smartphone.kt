@@ -1,6 +1,6 @@
 package com.example.proyectopoo.model
 
-class Smartphone(
+data class Smartphone(
     var esDualSIM: Boolean,
     var ram: String,
     var almacenamiento: String,

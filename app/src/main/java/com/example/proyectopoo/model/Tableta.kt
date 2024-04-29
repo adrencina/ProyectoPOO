@@ -1,6 +1,6 @@
 package com.example.proyectopoo.model
 
-class Tableta (
+data class Tableta (
     var pantalla: String,
     var ram: String,
     var almacenamiento: String,
