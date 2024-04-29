@@ -11,5 +11,4 @@ object RegistroDispositivos {
     fun buscarDispositivo(marca: String, modelo: String): Dispositivo? {
         return dispositivos.find { it.marca == marca && it.modelo == modelo }
     }
-
 }
