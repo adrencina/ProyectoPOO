@@ -1,11 +1,18 @@
 package com.example.proyectopoo
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.proyectopoo.databinding.ActivityMainBinding
+import com.example.proyectopoo.model.Dispositivo
+import com.example.proyectopoo.model.Estado
+import com.example.proyectopoo.model.RegistroDispositivos
+import com.example.proyectopoo.model.RegistroDispositivos.buscarDispositivo
+import com.example.proyectopoo.model.RegistroDispositivos.imprimirDispositivos
+import com.example.proyectopoo.model.RegistroDispositivos.removerDispositivo
 
 class MainActivity : AppCompatActivity() {
 
